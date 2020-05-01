@@ -1,6 +1,6 @@
 package in.hp.boot.movieinfoservice.controllers;
 
-import in.hp.boot.movieinfoservice.models.Movie;
+import in.hp.boot.movieinfoservice.dto.MovieDto;
 import in.hp.boot.movieinfoservice.services.MovieInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ public class MovieInfoController {
     private MovieInfoService movieInfoService;
 
     @GetMapping("{id}")
-    public Movie getInfo(@PathVariable String id) {
+    public MovieDto getInfo(@PathVariable String id) {
         return movieInfoService.getMovie(id);
     }
 }

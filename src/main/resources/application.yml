@@ -4,10 +4,5 @@ server:
 
 spring:
   application.name: movie-info-service
-  h2:
-    console:
-      enabled: true
-  jpa:
-    show-sql: true
 
 management.endpoints.web.exposure.include: "*"

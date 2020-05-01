@@ -1,0 +1,13 @@
+server:
+  port: 8200
+  error.include-stacktrace: never
+
+spring:
+  application.name: movie-info-service
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+
+management.endpoints.web.exposure.include: "*"

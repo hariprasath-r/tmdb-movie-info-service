@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Component
 public class MovieToMovieDtoMapper {
 
-    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d-MMM-yyyy");
+    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d-MMM-yyyy");
 
     public MovieDto toMovieDto(Movie movie) {
         MovieDto movieDto = new MovieDto();

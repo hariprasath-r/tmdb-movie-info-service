@@ -4,10 +4,9 @@ server:
 
 spring:
   application.name: movie-info-service
-  h2:
-    console:
-      enabled: true
-  jpa:
-    show-sql: true
 
 management.endpoints.web.exposure.include: "*"
+
+tmdb:
+  base_url: https://api.themoviedb.org/3/
+  api_key: 525074f1f0ee4cd494ffe0adee6b0074

@@ -1,7 +1,9 @@
-server:
-  port: 8200
-  error.include-stacktrace: never
-
 spring:
   application.name: movie-info-service
-  cloud.config.uri: http://localhost:8888
+  cloud:
+    config:
+#      If we are using Discovery First approach for config server, no need to specify discovery tree
+      discovery:
+        enabled: true
+        serviceId: spring-cloud-config-server
+#     uri: http://localhost:8888

@@ -4,6 +4,13 @@ spring:
   cloud:
     config:
       uri: http://localhost:8899
+      # the app will fail to start if config server is not present
+      fail-fast: true
+      # the below properties used to retry connecting to config server.
+      retry:
+        max-attempts: 20
+        max-interval: 15000
+        initial-interval: 10000
 #      If we are using Discovery First approach for config server, no need to specify discovery tree
 #      discovery:
 #        enabled: true

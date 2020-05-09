@@ -12,6 +12,6 @@ spring:
         max-interval: 15000
         initial-interval: 10000
 #      If we are using Discovery First approach for config server, no need to specify discovery tree
-#      discovery:
+#      config.discovery:
 #        enabled: true
 #        serviceId: spring-cloud-config-server

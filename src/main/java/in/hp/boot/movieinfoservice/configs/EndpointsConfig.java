@@ -8,22 +8,22 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties(prefix = "tmdb")
 public class EndpointsConfig {
-    private String base_url;
-    private String api_key;
+    private String baseUrl;
+    private String apiKey;
 
-    public String getBase_url() {
-        return base_url;
+    public String getBaseUrl() {
+        return baseUrl;
     }
 
-    public void setBase_url(String base_url) {
-        this.base_url = base_url;
+    public void setBaseUrl(String baseUrl) {
+        this.baseUrl = baseUrl;
     }
 
-    public String getApi_key() {
-        return api_key;
+    public String getApiKey() {
+        return apiKey;
     }
 
-    public void setApi_key(String api_key) {
-        this.api_key = api_key;
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 }

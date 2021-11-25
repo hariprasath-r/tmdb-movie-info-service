@@ -11,12 +11,11 @@ public class MovieInfoServiceUrlHelper {
     @Autowired
     private EndpointsConfig endpointsConfig;
 
-
     public String getMovieUriId(String id) {
-        return endpointsConfig.getBase_url()
+        return endpointsConfig.getBaseUrl()
                 + MovieInfoConstants.MOVIE_RESOURCE
                 + id
                 + MovieInfoConstants.API_KEY_PARAM
-                + endpointsConfig.getApi_key();
+                + endpointsConfig.getApiKey();
     }
 }

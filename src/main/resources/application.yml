@@ -1,3 +1,6 @@
 server:
   port: ${PORT:8200}
   error.include-stacktrace: never
+
+cache:
+  enabled: true
